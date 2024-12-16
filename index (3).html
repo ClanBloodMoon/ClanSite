@@ -1,0 +1,203 @@
+<html lang="ru">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Клан BloodMoon
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   .hidden {
+    display: none;
+   }
+  </style>
+  <script>
+   function toggleSection(id) {
+    const section = document.getElementById(id);
+    section.classList.toggle('hidden');
+   }
+  </script>
+ </head>
+ <body class="font-roboto bg-gray-100">
+  <header class="bg-red-700 text-white p-6 shadow-lg">
+   <div class="container mx-auto flex justify-between items-center">
+    <h1 class="text-3xl font-bold">
+     Клан BloodMoon
+    </h1>
+    <nav>
+     <ul class="flex space-x-6">
+      <li>
+       <a class="hover:underline cursor-pointer" onclick="toggleSection('rules')">
+        Правила
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline cursor-pointer" onclick="toggleSection('news')">
+        Новости
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline cursor-pointer" onclick="toggleSection('csk')">
+        ЧСК
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline cursor-pointer" onclick="toggleSection('download')">
+        Скачать текстурпак
+       </a>
+      </li>
+     </ul>
+    </nav>
+   </div>
+  </header>
+  <main class="container mx-auto p-6">
+   <section class="mb-8">
+    <h2 class="text-2xl font-bold mb-4 cursor-pointer text-red-700" onclick="toggleSection('rules')">
+     Правила
+    </h2>
+    <div class="space-y-4 hidden" id="rules">
+     <div class="bg-white p-6 rounded-lg shadow-md">
+      <h3 class="text-lg font-semibold">
+       Правило 1
+      </h3>
+      <p>
+        Неадекватное поведение ( пред или выговор)
+      </p>
+     </div>
+     <div class="bg-white p-6 rounded-lg shadow-md">
+      <h3 class="text-lg font-semibold">
+       Правило 2
+      </h3>
+      <p>
+        Нарушение правил проекта ( пред или выговор) 
+      </p>
+     </div>
+     <div class="bg-white p-6 rounded-lg shadow-md">
+      <h3 class="text-lg font-semibold">
+       Правило 3
+      </h3>
+      <p>
+        Общение с ЧСК (кик+ЧСК) 
+      </p>
+     </div>
+     <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-lg font-semibold">
+         Правило 4
+        </h3>
+        <p>
+            Слив информации (кик + ЧСК)
+        </p>
+       </div>
+       <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-lg font-semibold">
+         Правило 5
+        </h3>
+        <p>
+            Ебланство ( пред или выговор)
+        </p>
+       </div>
+       <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-lg font-semibold">
+         Правило 6
+        </h3>
+        <p>
+            Не приносить пользу клану ( пред или выговор) 
+        </p>
+       </div>
+       <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-lg font-semibold">
+         Правило 7
+        </h3>
+        <p>
+            Неактив (пред или выговор)
+        </p>
+       </div>
+       <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-lg font-semibold">
+         Правило 8
+        </h3>
+        <p>
+            Попытка убийства соклановца ( пред. или выговор)
+        </p>
+       </div>
+    </div>
+   </section>
+   <section class="mb-8">
+    <h2 class="text-2xl font-bold mb-4 cursor-pointer text-red-700" onclick="toggleSection('news')">
+     Новости
+    </h2>
+    <div class="space-y-4 hidden" id="news">
+     <div class="bg-white p-6 rounded-lg shadow-md">
+      <h3 class="text-lg font-semibold">
+       Новость 1
+      </h3>
+      <p>
+        Всем пройти обучение.
+        Кто не пройдёт выговор.
+        Проведёт обучение @Ktoto379 и  @Kirillartika3.
+      </p>
+     </div>
+     <div class="bg-white p-6 rounded-lg shadow-md">
+      <h3 class="text-lg font-semibold">
+       Новость 2
+      </h3>
+      <p>
+        Добавлена новая роль "Управляющий"!
+        Управляющий– человек  который отвечает за участников клана. Выдаёт поручения.
+        Так же ответственный за набор в клан. Выдаёт наказания ( пред или выговор).
+        @Kirillartika3 – временно назначен на роль Управляющий.
+      </p>
+     </div>
+     <div class="bg-white p-6 rounded-lg shadow-md">
+      <h3 class="text-lg font-semibold">
+       Новость 3
+      </h3>
+      <p>
+        Идёт набор на роль "Креатор"
+        Креатор – это человек который придумывает идеи для продвижения клана и планы по рейдам кометы и т. д.
+      </p>
+     </div>
+    </div>
+   </section>
+   <section class="mb-8">
+    <h2 class="text-2xl font-bold mb-4 cursor-pointer text-red-700" onclick="toggleSection('csk')">
+     ЧСК
+    </h2>
+    <ul class="space-y-2 hidden" id="csk">
+     <li class="bg-white p-6 rounded-lg shadow-md">
+        maxASDF34
+     </li>
+     <li class="bg-white p-6 rounded-lg shadow-md">
+        Хомяки 
+     </li>
+     <li class="bg-white p-6 rounded-lg shadow-md">
+        Flippy_76
+     </li>
+     <li class="bg-white p-6 rounded-lg shadow-md">
+        DevDark
+     </li>
+    </ul>
+   </section>
+   <section class="mb-8">
+    <h2 class="text-2xl font-bold mb-4 cursor-pointer text-red-700" onclick="toggleSection('download')">
+     Скачать текстурпак
+    </h2>
+    <div class="bg-white p-6 rounded-lg shadow-md hidden" id="download">
+     <a class="text-red-700 hover:underline" href="https://clck.ru/3FFXhp">
+      Скачать файл
+     </a>
+    </div>
+   </section>
+  </main>
+  <footer class="bg-red-700 text-white p-6">
+   <div class="container mx-auto text-center">
+    <p>
+     © 2023 Клан BloodMoon. Все права защищены.
+    </p>
+   </div>
+  </footer>
+ </body>
+</html>
